@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rama Maulana — IT Support &amp; Web Developer</title>
+<meta name="description" content="Portofolio Rama Maulana — IT / Technical Support & web developer berlatar TKJ. Jaringan, troubleshooting, dan website yang rapi dan kepake.">
+<meta name="theme-color" content="#050814">
+<link rel="canonical" href="https://rmamlnnnnn.netlify.app/">
+
+<meta property="og:title" content="Rama Maulana — IT Support & Web Developer">
+<meta property="og:description" content="No rules. Just code. Rama builds, breaks, and creates — turning ideas into real digital experiences.">
+<meta property="og:image" content="https://rmamlnnnnn.netlify.app/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://rmamlnnnnn.netlify.app/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rama Maulana — IT Support & Web Developer">
+<meta name="twitter:image" content="https://rmamlnnnnn.netlify.app/preview.jpg">
+
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="contain/rama-mark.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=7">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rama Maulana",
+  "jobTitle": "IT / Technical Support & Web Developer",
+  "url": "https://rmamlnnnnn.netlify.app/",
+  "worksFor": { "@type": "Organization", "name": "PT Tandem" },
+  "sameAs": ["https://github.com/rmamln", "https://instagram.com/rmamln", "https://linktr.ee/ramzoklama"]
+}
+</script>
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+
+<body>
+
+<a href="#about" class="skip-link">Lewati ke konten</a>
+
+<!-- scroll progress -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<header>
+  <a href="#main" class="brand" aria-label="Rama — ke atas">
+    <img src="contain/rama-mark.png" alt="" class="brand-mark" width="26" height="26">rama<span class="brand-accent">.</span>
+  </a>
+
+  <div class="header-right">
+    <button class="cmdk-btn" id="cmdkBtn" type="button" aria-label="Buka command palette">
+      <span>jump to</span>
+      <kbd>⌘K</kbd>
+    </button>
+
+    <nav class="navigation" aria-label="Navigasi utama">
+      <a href="#main" data-section="main"><span class="idx">01</span>Home</a>
+      <a href="#about" data-section="about"><span class="idx">02</span>About</a>
+      <a href="#Experience" data-section="Experience"><span class="idx">03</span>Experience</a>
+      <a href="#MySkills" data-section="MySkills"><span class="idx">04</span>Skills</a>
+      <a href="#Projects" data-section="Projects"><span class="idx">05</span>Projects</a>
+      <a href="#Mysocialmedia" data-section="Mysocialmedia"><span class="idx">06</span>Social</a>
+      <a href="#Consult" data-section="Consult"><span class="idx">07</span>Contact</a>
+    </nav>
+
+    <div class="menu-btn" role="button" aria-label="Buka menu" aria-expanded="false" tabindex="0">
+      <div class="menu-btn-burger"></div>
+    </div>
+  </div>
+</header>
+
+<!-- COMMAND PALETTE -->
+<div class="cmdk-overlay" id="cmdkOverlay">
+  <div class="cmdk-box" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="cmdk-input-row">
+      <span class="cmdk-prompt">/</span>
+      <input type="text" id="cmdkInput" placeholder="cari section atau link... (about, skills, github)" autocomplete="off" spellcheck="false">
+      <kbd>esc</kbd>
+    </div>
+    <ul class="cmdk-results" id="cmdkResults"></ul>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="main" id="main">
+  <canvas id="netCanvas" class="net-canvas" aria-hidden="true"></canvas>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <div class="hero-inner">
+
+    <div class="hero-copy">
+      <div class="avail-pill" data-reveal="up" style="--d:0.1s">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>Eks IT Support @ PT Tandem · terbuka buat project &amp; konsultasi</span>
+      </div>
+
+      <h1 data-reveal="up" style="--d:0.25s">RAMA<br><span>MAULANA</span></h1>
+
+      <div class="role-rotator" data-reveal="up" style="--d:0.4s">
+        <span class="role-label">root@rama:~$</span>
+        <div class="role-window" aria-label="web developer, network enthusiast, problem solver">
+          <ul class="role-track" aria-hidden="true">
+            <li>web developer</li>
+            <li>network enthusiast</li>
+            <li>problem solver</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="tagline" data-reveal="up" style="--d:0.55s">
+        Gw bantu bikin sistem jalan lancar — dari jaringan kantor, troubleshooting, sampai website yang rapi dan kepake. Nggak ikut aturan baku, tapi hasilnya tetap bisa diandalkan.
+      </p>
+
+      <div class="cta-row" data-reveal="up" style="--d:0.7s">
+        <a href="#Projects" class="btn btn-primary">Lihat project <span aria-hidden="true">→</span></a>
+        <a href="#Consult" class="btn btn-ghost">Ajak ngobrol</a>
+      </div>
+
+      <div class="hero-meta" data-reveal="up" style="--d:0.85s">
+        <ul class="hero-social" aria-label="Sosial media">
+          <li><a href="https://github.com/rmamln" target="_blank" rel="noopener" aria-label="GitHub"><img src="contain/github.svg" alt="" class="icon-invert"></a></li>
+          <li><a href="https://instagram.com/rmamln" target="_blank" rel="noopener" aria-label="Instagram"><img src="contain/Instagram_logo_2022.svg" alt=""></a></li>
+          <li><a href="https://linktr.ee/ramzoklama" target="_blank" rel="noopener" aria-label="Linktree"><img src="contain/linktre.png" alt="" class="icon-tile-light"></a></li>
+        </ul>
+
+        <dl class="hero-stats">
+          <div><dt>github repos</dt><dd id="statRepos">—</dd></div>
+          <div><dt>followers</dt><dd id="statFollowers">—</dd></div>
+          <div><dt>project live</dt><dd id="statProjects">—</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <!-- INTERACTIVE TERMINAL -->
+    <div class="terminal" data-reveal="up" style="--d:0.6s">
+      <div class="terminal-head">
+        <span class="term-dot red"></span>
+        <span class="term-dot amber"></span>
+        <span class="term-dot green"></span>
+        <span class="terminal-title">guest@rama.dev — bash</span>
+      </div>
+      <div class="terminal-body" id="terminalBody" aria-live="polite">
+        <p class="term-line">Selamat datang. Ketik <span class="term-hl">help</span> buat liat daftar command.</p>
+      </div>
+      <div class="terminal-chips" id="termChips" aria-label="Command cepat">
+        <button type="button" data-cmd="help">help</button>
+        <button type="button" data-cmd="neofetch">neofetch</button>
+        <button type="button" data-cmd="projects">projects</button>
+        <button type="button" data-cmd="skills">skills</button>
+      </div>
+      <div class="terminal-input-row">
+        <label class="term-prompt" for="terminalInput">guest@rama.dev:~$</label>
+        <input type="text" id="terminalInput" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command input">
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll ke bawah">
+      <span>scroll</span>
+      <span class="scroll-line"></span>
+    </a>
+  </div>
+
+  <!-- ID CARD GANTUNG (bisa ditarik / digoyang) -->
+  <aside class="lanyard" id="lanyard" aria-label="Kartu ID Rama yang bisa ditarik dan digoyang">
+    <canvas id="lanyardCanvas" aria-hidden="true"></canvas>
+
+    <div class="badge" id="badge" role="group" tabindex="0"
+         aria-label="Kartu ID Rama Maulana. Tarik dengan mouse atau jari, atau tekan panah kiri dan kanan buat goyangin.">
+      <span class="badge-clip" aria-hidden="true"></span>
+      <span class="badge-slot" aria-hidden="true"></span>
+
+      <div class="badge-photo">
+        <img src="image/Rama-badge.png" alt="Foto Rama Maulana" width="480" height="480" draggable="false">
+      </div>
+
+      <p class="badge-hello">HELLO, I'M</p>
+      <p class="badge-name">Rama<span>.</span></p>
+      <p class="badge-role">IT Support · Web Dev</p>
+
+      <div class="badge-foot">
+        <span class="badge-live"><i class="status-dot" aria-hidden="true"></i>online</span>
+        <span>ID · 2026</span>
+      </div>
+      <div class="badge-barcode" aria-hidden="true"></div>
+    </div>
+  </aside>
+</section>
+
+<!-- TECH MARQUEE -->
+<div class="marquee" aria-label="Teknologi dan tools yang gw pakai">
+  <div class="marquee-track">
+    <ul>
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>GitHub</li><li>Mikrotik</li><li>Linux / Debian</li><li>Windows</li><li>Troubleshooting</li><li>Excel</li><li>Photoshop</li>
+    </ul>
+    <ul aria-hidden="true">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>GitHub</li><li>Mikrotik</li><li>Linux / Debian</li><li>Windows</li><li>Troubleshooting</li><li>Excel</li><li>Photoshop</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="title">
+    <span class="eyebrow">02 / SYSTEM_INFO</span>
+    <h2 class="section-title">Tentang Gw</h2>
+  </div>
+
+  <div class="content">
+    <div class="col-left" data-reveal="left">
+      <div class="img-card">
+        <img src="image/Rama.jpeg" alt="Foto Rama Maulana" loading="lazy">
+        <div class="img-tag">status: <span class="ok">active</span></div>
+      </div>
+    </div>
+
+    <div class="col-right" data-reveal="right">
+      <h3 class="content-title">Hi, gw Rama<span class="dot-red">.</span></h3>
+      <p>
+        Gw IT Support dan web developer dengan latar belakang TKJ. Keseharian gw berkutat di troubleshooting, jaringan, dan pengembangan website — memastikan sistem berjalan stabil dan solusinya tertata rapi.
+      </p>
+      <p>
+        Gw belajar secara mandiri dan terbiasa mengeksplorasi hal baru: dari konfigurasi Mikrotik, administrasi Linux, sampai membangun web dari nol. Setiap masalah gw perlakukan sebagai kesempatan untuk memahami sistem lebih dalam.
+      </p>
+      <p>
+        Pendekatan gw sederhana: kerja yang teliti, dokumentasi yang jelas, dan hasil yang bisa diandalkan. Website ini juga gw bangun dengan bantuan AI — gw yang menentukan arah, isi, dan penyesuaiannya.
+      </p>
+      <p class="closing">Practical solutions. Clean execution. Continuous learning.</p>
+
+      <div class="tag-row">
+        <span class="tag">self-taught</span>
+        <span class="tag">TKJ</span>
+        <span class="tag">builder</span>
+      </div>
+
+      <ul class="focus-grid">
+        <li class="spot">
+          <span class="focus-idx">01</span>
+          <h4>Web</h4>
+          <p>Bikin &amp; deploy website sederhana yang rapi, responsif, dan enak dipakai.</p>
+        </li>
+        <li class="spot">
+          <span class="focus-idx">02</span>
+          <h4>Jaringan</h4>
+          <p>Konfigurasi dasar Mikrotik, monitoring &amp; maintenance jaringan.</p>
+        </li>
+        <li class="spot">
+          <span class="focus-idx">03</span>
+          <h4>Support</h4>
+          <p>Troubleshooting hardware &amp; software sampai masalahnya beres dan terdokumentasi.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="experience" id="Experience">
+  <div class="title">
+    <span class="eyebrow">03 / EXPERIENCE</span>
+    <h2 class="section-title">Pengalaman Kerja</h2>
+  </div>
+
+  <div class="exp-panel spot" data-reveal="up">
+    <div class="panel-head">
+      <span class="panel-dot exp" aria-hidden="true"></span>
+      <span class="panel-file">experience.log</span>
+    </div>
+
+    <div class="panel-body exp-body">
+      <ol class="timeline">
+        <li class="timeline-item is-current">
+          <span class="timeline-node" aria-hidden="true"></span>
+
+          <div class="exp-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>terakhir kerja · Juli 2026</span>
+          </div>
+
+          <h3 class="exp-role">IT / Technical Support</h3>
+          <div class="exp-meta">
+            <span class="exp-company">PT Tandem</span>
+            <span class="exp-sep">·</span>
+            <span class="exp-period">2026 — Juli 2026</span>
+          </div>
+
+          <ul class="exp-list">
+            <li>Menangani troubleshooting hardware &amp; software buat kebutuhan tim internal</li>
+            <li>Membantu maintain &amp; monitor jaringan kantor sehari-hari</li>
+            <li>Menangani tiket support, dokumentasi masalah, dan tindak lanjut perbaikan</li>
+          </ul>
+
+          <div class="chip-row">
+            <span class="chip">Troubleshooting</span>
+            <span class="chip">Jaringan</span>
+            <span class="chip">Ticketing</span>
+            <span class="chip">Dokumentasi</span>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="MySkills" id="MySkills">
+  <div class="title">
+    <span class="eyebrow">04 / CAPABILITIES</span>
+    <h2 class="section-title">Skills</h2>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="skill-panel spot" data-reveal="up">
+      <div class="panel-head">
+        <span class="panel-dot hard" aria-hidden="true"></span>
+        <span class="panel-file">hard_skills.log</span>
+      </div>
+
+      <div class="panel-body">
+
+        <div class="skill-group">
+          <h4>Web Development</h4>
+          <ul class="skill-list">
+            <li>HTML &amp; CSS</li>
+            <li>Dasar JavaScript</li>
+            <li>Dasar PHP</li>
+            <li>GitHub &amp; deploy website dasar</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>Jaringan &amp; Sistem <span class="muted">(TKJ)</span></h4>
+          <ul class="skill-list">
+            <li>Dasar jaringan komputer</li>
+            <li>Mikrotik &amp; konfigurasi jaringan dasar</li>
+            <li>Windows &amp; troubleshooting komputer</li>
+            <li>Linux / Debian dasar</li>
+            <li>Troubleshooting hardware &amp; software</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>Tools &amp; Produktivitas</h4>
+          <ul class="skill-list">
+            <li>Microsoft Excel <span class="muted">(SUM, IF, VLOOKUP/XLOOKUP, COUNTIF, filter &amp; sort)</span></li>
+            <li>Photoshop &amp; desain grafis dasar</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="skill-panel spot" data-reveal="up" style="--pd:0.15s">
+      <div class="panel-head">
+        <span class="panel-dot soft" aria-hidden="true"></span>
+        <span class="panel-file">soft_skills.log</span>
+      </div>
+
+      <div class="panel-body">
+        <div class="pill-row">
+          <span class="pill">Mau belajar hal baru</span>
+          <span class="pill">Problem solving</span>
+          <span class="pill">Teliti</span>
+          <span class="pill">Bertanggung jawab</span>
+          <span class="pill">Komunikasi</span>
+          <span class="pill">Kerja tim</span>
+          <span class="pill">Adaptif</span>
+          <span class="pill">Disiplin</span>
+          <span class="pill">Kreatif</span>
+          <span class="pill">Pantang menyerah</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="projects" id="Projects">
+  <div class="title">
+    <span class="eyebrow">05 / PROJECTS</span>
+    <h2 class="section-title">Projects</h2>
+  </div>
+
+  <article class="featured spot" data-reveal="up">
+    <div class="featured-info">
+      <div class="project-head">
+        <span class="project-dot" aria-hidden="true"></span>
+        <span class="project-tag">featured · web app</span>
+      </div>
+      <h3>RamWare</h3>
+      <p>Library buat download OS &amp; software terpercaya — Windows Ghost Spectre, Debian, Ubuntu, driver, sampai tools kayak Xampp &amp; FileZilla. Semua dikumpulin di satu tempat biar nggak perlu nyari-nyari lagi.</p>
+
+      <div class="chip-row">
+        <span class="chip">Sistem Operasi</span>
+        <span class="chip">Driver</span>
+        <span class="chip">Software &amp; tools</span>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://rmamln.github.io/RamWare/" target="_blank" rel="noopener">Buka RamWare <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+
+    <a class="mockup" href="https://ramwareiso.netlify.app/" target="_blank" rel="noopener" aria-label="Buka RamWare di tab baru">
+      <div class="mockup-bar">
+        <span class="term-dot red"></span><span class="term-dot amber"></span><span class="term-dot green"></span>
+        <span class="mockup-url">ramwareiso.netlify.app</span>
+      </div>
+      <ul class="mockup-body" aria-hidden="true">
+        <li><span>Windows Ghost Spectre</span><em>OS</em></li>
+        <li><span>Debian</span><em>OS</em></li>
+        <li><span>Ubuntu</span><em>OS</em></li>
+        <li><span>Driver</span><em>Driver</em></li>
+        <li><span>Xampp</span><em>Tools</em></li>
+        <li><span>FileZilla</span><em>Tools</em></li>
+      </ul>
+    </a>
+  </article>
+
+  <div class="project-grid">
+    <a class="project-card spot is-soon" href="https://github.com/rmamln" target="_blank" rel="noopener" data-reveal="up">
+      <div class="project-head">
+        <span class="project-dot" aria-hidden="true"></span>
+        <span class="project-tag">in progress</span>
+      </div>
+      <h3>next_project.exe</h3>
+      <p>Lagi dikerjain. Pantau terus repo GitHub gw buat update project berikutnya.</p>
+      <span class="project-link">cek github →</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ SOCIAL ============ -->
+<section class="Mysocialmedia" id="Mysocialmedia">
+  <div class="title">
+    <span class="eyebrow">06 / CONNECT</span>
+    <h2 class="section-title">Social Media</h2>
+  </div>
+
+  <div class="card-container">
+
+    <div class="card spot" data-reveal="up">
+      <button class="copy-btn" data-copy="@rmamln" type="button" aria-label="Copy handle Instagram">copy</button>
+      <span class="icon-tile"><img src="contain/Instagram_logo_2022.svg" alt="Instagram"></span>
+      <h3>Instagram</h3>
+      <a class="handle" href="https://instagram.com/rmamln" target="_blank" rel="noopener">@rmamln</a>
+    </div>
+
+    <div class="card spot" data-reveal="up" style="--pd:0.1s">
+      <button class="copy-btn" data-copy="@rmamln" type="button" aria-label="Copy handle GitHub">copy</button>
+      <span class="icon-tile"><img src="contain/github.svg" alt="GitHub" class="icon-invert"></span>
+      <h3>GitHub</h3>
+      <a class="handle" href="https://github.com/rmamln" target="_blank" rel="noopener">@rmamln</a>
+      <p class="gh-stats" id="ghStats">fetching stats<span class="cursor-blink">_</span></p>
+    </div>
+
+    <div class="card spot" data-reveal="up" style="--pd:0.2s">
+      <button class="copy-btn" data-copy="https://linktr.ee/ramzoklama" type="button" aria-label="Copy URL Linktree">copy</button>
+      <span class="icon-tile"><img src="contain/linktre.png" alt="Linktree" class="icon-tile-light"></span>
+      <h3>Linktree</h3>
+      <a class="handle" href="https://linktr.ee/ramzoklama" target="_blank" rel="noopener">open →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="consult" id="Consult">
+  <div class="title">
+    <span class="eyebrow">07 / CONTACT</span>
+    <h2 class="section-title">Ayo Kerja Bareng</h2>
+  </div>
+
+  <div class="consult-wrap">
+
+    <div class="consult-info" data-reveal="up">
+      <p class="consult-intro">Ada project, kerjaan support, atau butuh bantuan teknis? Isi form — langsung masuk ke email gw dan bakal gw balas secepatnya.</p>
+
+      <h4 class="consult-sub">yang bisa gw bantu</h4>
+      <ul class="help-list">
+        <li><span class="help-idx">01</span>Website sederhana — landing page, profil, atau tools kecil</li>
+        <li><span class="help-idx">02</span>Setup &amp; troubleshooting jaringan (Mikrotik dasar)</li>
+        <li><span class="help-idx">03</span>Troubleshooting PC / laptop, Windows &amp; Linux</li>
+        <li><span class="help-idx">04</span>Desain grafis dasar &amp; olah data di Excel</li>
+      </ul>
+    </div>
+
+    <div class="consult-panel spot" data-reveal="up" style="--pd:0.1s">
+      <div class="panel-head">
+        <span class="panel-dot exp" aria-hidden="true"></span>
+        <span class="panel-file">consult.log</span>
+      </div>
+
+      <div class="panel-body">
+        <form name="consult" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="consultForm" class="consult-form">
+          <input type="hidden" name="form-name" value="consult">
+          <p class="visually-hidden">
+            <label>Jangan diisi kalau lo manusia: <input name="bot-field"></label>
+          </p>
+
+          <div class="form-row">
+            <label for="cName">nama</label>
+            <input type="text" id="cName" name="name" required autocomplete="name">
+          </div>
+
+          <div class="form-row">
+            <label for="cEmail">email</label>
+            <input type="email" id="cEmail" name="email" required autocomplete="email">
+          </div>
+
+          <div class="form-row">
+            <label for="cTopic">jenis kebutuhan</label>
+            <select id="cTopic" name="topic">
+              <option value="Website / web dev">Website / web dev</option>
+              <option value="Jaringan">Jaringan</option>
+              <option value="IT support / troubleshooting">IT support / troubleshooting</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="cMessage">kebutuhan konsultasi</label>
+            <textarea id="cMessage" name="message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-send">kirim_pesan()</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-left">
+    <p>root@rama:~$ status: <span class="ok">online</span> · ping <span id="pingMs">—</span>ms</p>
+    <p class="copyright">© 2026 Rama Maulana</p>
+  </div>
+  <button class="to-top" id="toTop" type="button" aria-label="Kembali ke atas">↑ top</button>
+</footer>
+
+<script src="script.js?v=7"></script>
+
+</body>
+</html>
